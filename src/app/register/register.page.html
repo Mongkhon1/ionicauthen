@@ -1,0 +1,22 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-card>
+    <div class="text-center">
+      <h2>สมัครสมาชิก</h2>
+    </div>
+    <div class="ion-padding">
+      <ion-input placeholder="Name" type="text" [(ngModel)]="txtname" fill="solid"></ion-input>
+      <ion-input placeholder="Email" class="mt-4" type="email" [(ngModel)]="txtemail" fill="solid"></ion-input>
+      <ion-input placeholder="Username" class="mt-4" type="text" [(ngModel)]="txtusername" fill="solid"></ion-input>
+      <ion-input placeholder="Password" class="mt-4" type="password" [(ngModel)]="txtpassword" fill="solid"></ion-input>
+    </div>
+    <ion-button expand="block" color="warning" (click)="register()" style="margin-bottom: 15px;">Register</ion-button>
+    <ion-button expand="block" color="primary" (click)="gotoHome()">Login</ion-button>
+  </ion-card>
+</ion-content>
